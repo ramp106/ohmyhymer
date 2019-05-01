@@ -1936,6 +1936,15 @@ input, select, textarea {
 					background: #829bc9;
 				}
 
+				.icon.circle.fa-instagram {
+					background: #c13584;
+					color: #fff;
+				}
+
+					.icon.circle.fa-instagram:hover {
+						background: #bf4389	;
+					}
+
 			.icon.circle.fa-google-plus {
 				background: #db6b67;
 				color: #fff;
@@ -2000,6 +2009,46 @@ input, select, textarea {
 			padding-left: 0.5em;
 		}
 
+
+		.comp-steps {
+			max-width: 920px;
+			margin: auto;
+			padding-bottom: 50px;
+		}
+		.comp-steps ol {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  counter-reset: ordered-list;
+		}
+
+		.comp-steps li {
+		  border-bottom: 1px solid #ededed;
+		  font-size: 20px;
+		  padding: 15px 15px 20px 120px;
+		  position: relative;
+			color: #F5C61A;
+			font-weight: 500;
+			text-transform: uppercase;
+			padding-left: 100px;
+			text-align: left;
+		}
+
+		.comp-steps li:last-child {
+		  border-bottom: none;
+		}
+
+		.comp-steps li:before {
+		  color: gray;
+		  content: counter(ordered-list);
+		  counter-increment: ordered-list;
+		  font-family: sans-serif;
+		  font-size: 38px;
+		  font-weight: bold;
+		  left: 60px;
+		  line-height: 38px;
+		  position: absolute;
+		}
 /* Icons */
 
 	ul.icons {
@@ -2511,14 +2560,15 @@ input, select, textarea {
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
+		background-image: url("../../images/banner.jpg");
 		background-position: top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: 25em, 25em, auto, cover;
+		background-size: 100% auto;
 		color: #fff;
 		cursor: default;
 		padding: 6em 0;
 		text-align: center;
+		min-height:720px;
 	}
 
 		#banner .inner {
@@ -2600,6 +2650,14 @@ input, select, textarea {
 
 	body.index #main {
 		padding-top: 5em;
+	}
+
+	#comp-details {
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+	.hashtag {
+		font-weight:500;
 	}
 
 /* CTA */
@@ -2809,7 +2867,7 @@ input, select, textarea {
 
 	}
 
-/* Narrower 
+/* Narrower
 
 	#navPanel, #navButton {
 		display: none;
@@ -2817,7 +2875,7 @@ input, select, textarea {
 
 	@media screen and (max-width: 840px) {
 
-		/* Basic 
+		/* Basic
 
 			html, body {
 				overflow-x: hidden;
@@ -2840,7 +2898,7 @@ input, select, textarea {
 					padding-top: 1.25em;
 				}
 
-		/* Section/Article 
+		/* Section/Article
 
 			section {
 				margin: 1em 0 1em 0;
@@ -2940,7 +2998,7 @@ input, select, textarea {
 				padding: 4em 1.5em;
 			}
 
-		/* Nav 
+		/* Nav
 
 			#page-wrapper {
 				-moz-backface-visibility: hidden;
