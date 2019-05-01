@@ -1937,12 +1937,12 @@ input, select, textarea {
 				}
 
 				.icon.circle.fa-instagram {
-					background: #c13584;
+					background: #fcaf45;
 					color: #fff;
 				}
 
 					.icon.circle.fa-instagram:hover {
-						background: #bf4389	;
+						background: #fab658	;
 					}
 
 			.icon.circle.fa-google-plus {
@@ -2023,15 +2023,13 @@ input, select, textarea {
 		}
 
 		.comp-steps li {
-		  border-bottom: 1px solid #ededed;
+		  /*border-bottom: 1px solid #ededed;*/
 		  font-size: 20px;
-		  padding: 15px 15px 20px 120px;
+		  padding: 40px 20px 20px 20px;
 		  position: relative;
 			color: #F5C61A;
 			font-weight: 500;
 			text-transform: uppercase;
-			padding-left: 100px;
-			text-align: left;
 		}
 
 		.comp-steps li:last-child {
@@ -2045,7 +2043,8 @@ input, select, textarea {
 		  font-family: sans-serif;
 		  font-size: 38px;
 		  font-weight: bold;
-		  left: 60px;
+		  left: 49%;
+			top: 0px;
 		  line-height: 38px;
 		  position: absolute;
 		}
@@ -2560,15 +2559,15 @@ input, select, textarea {
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("../../images/banner.jpg");
-		background-position: top center;
+		background-image: url("../../images/banner-desktop.jpg");
+		background-position: center center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 100% auto;
 		color: #fff;
 		cursor: default;
 		padding: 6em 0;
 		text-align: center;
-		min-height:720px;
+		min-height:515px;
 	}
 
 		#banner .inner {
@@ -2849,7 +2848,10 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				background-size: 15em, 15em, auto, cover;
+				background-image: url(../../images/banner-med.jpg);
+				background-size: cover;
+				background-position: center;
+				padding: 6em 0;
 			}
 
 		/* Main */
@@ -3302,6 +3304,7 @@ input, select, textarea {
 			#banner {
 				background-image: url(../../images/banner-mobile.jpg);
 				background-size: cover;
+				background-position: center;
 				padding: 6em 0;
 			}
 
