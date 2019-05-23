@@ -2658,7 +2658,11 @@ input, select, textarea {
 	.hashtag {
 		font-weight:500;
 	}
-
+	.winner {
+			box-shadow: 3px 3px 1px #F5C61A;
+		-webkit-box-shadow: 3px 3px 1px #F5C61A;
+		-moz-box-shadow: 3px 3px 1px #F5C61A;
+	} 
 /* CTA */
 
 	#cta {
